@@ -6,6 +6,10 @@ In this project, I investigated whether Neanderthal-introgressed haplotypes in t
 ## 1) S*-statistics
 To find putatively Neanderthal-introgressed in present-day human genomes, S*-statistics is computed for 200 present-day genomes from each of Europe and East Asia.
 
+Populations of 200 individuals with western European ancestry: Great Britain (GBR), Utah residents with Central European ancestry (CEU), Finland (FIN).
+
+Populations of 200 individuals with East Asian ancestry: Han Chinese from Bejing (CHB), Han Chinese from South China (CHS), Japanes (JPN).  
+
 S* is performed over 50 kb windows with a step size of 20 kb across all autosomal chromosomes of 20 test Eurasian genomes. 13 Yoruba genomes from sub-Saharan Africa are used as the outgroup population which does not carry Neanderthal ancestry.
 
 Run S* as follows: 
