@@ -4,7 +4,7 @@ In this project, I investigated whether Neanderthal-introgressed haplotypes in t
 
 
 ## 1) S*-statistics
-To find putatively Neanderthal-introgressed in present-day human genomes, S*-statistics is computed for 200 present-day genomes from each of Europe and East Asia.
+To find putatively Neanderthal-introgressed haplotypes in present-day human genomes, S*-statistics is computed for 200 present-day genomes from each of Europe and East Asia.
 
 Populations of 200 individuals with western European ancestry: Great Britain (GBR), Utah residents with Central European ancestry (CEU), Finland (FIN).
 
