@@ -1,3 +1,5 @@
+##Author: Recep Ozgur Taskent
+
 #EA - path = /gpfs/scratch/recepozg/sstar/ea
 for i in {9..22};
 do echo $i;
