@@ -47,11 +47,17 @@ Haplotypes with S*-scores falling above 0.99 percentile of the null-distribution
 
 This filtering step was run as follows:
 
-python SstarScoreFilter.py population run 
+python SstarScoreFilter.py path inputfile_recom_noSegSites inputfile_nullSscore_distribution run population
 
-population: western Europe or East Asia
+path: Path to the directory where S*-detected haplotype .bed files are found  
 
-run: 1 to 10.
+inputfile_recom_noSegSites: A .txt file showing the total number of segregating sites and the average recombination rate for each 50 kb window 
+
+inputfile_nullSscore_distribution: A .txt file showing the 0.99 percentile for the null S*-score distribution for a given recombination rate-number of segregating sites parameter pair 
+
+run: from 1 to 10
+
+population: (ea) East Asia or  we (western Europe)
 
 
 ## 3) Concatenate S*-significant haplotypes for runs 1 to 10
@@ -67,9 +73,9 @@ Run as follows:
 
 bedtools merge -i inputfile -c 4,5,6,7,8,9,10,11 -o distinct,collapse,collapse,collapse,collapse,collapse,collapse,collapse -delim ";" >  outputfile
 
-inputfile: A bed file including S*-significant haplotypes gathered from all 10 runs  
+inputfile: A bed file for S*-significant haplotypes gathered from all 10 runs  
 
-outputfile: A bed file including S*-significant haplotypes merged for overlapping regions. 
+outputfile: A bed file for S*-significant haplotypes merged for overlapping regions. 
 
 
 ## 5) Find phased S*-significant haplotypes
@@ -78,10 +84,19 @@ To find phased S*-significant haplotypes, we detected the chromosome for which t
 
 Run as follows:
 
-python find_phased_haplotypes.py
+python find_phased_haplotypes.py inputfile1 inputfile2 outputfile population
 
 
-#Compute average pairwise nucleotide difference (pi) between the S*-significant haplotypes and the two high quality Neanderthal genomes (Altai and Vindija Neanderthal genomes) and count the number of new mutations occurred on S*-significant haplotypes in the modern human lineage (that is, after they entered human genomes) as well as the derived alleles shared between modern human populations and the ancient hominin genomes 
+inputfile1: A .bed for S*-significant haplotypes, including the SNP positions that S* used to detect the derived haplotype
+
+inputfile2: A .vcf file for 1000 Genomes Project, Phase I data set  
+
+outputfile: A .bed for S*-significant phased haplotypes, including the SNP positions that S* used to detect the derived haplotype
+
+population: ea (East Asia) or we (western Europe)
+
+
+## 6) Compute average pairwise nucleotide difference (pi) between the S*-significant haplotypes and the two high quality Neanderthal genomes (Altai and Vindija Neanderthal genomes) and count the number of new mutations occurred on S*-significant haplotypes in the modern human lineage (that is, after they entered human genomes) as well as the derived alleles shared between modern human populations and the ancient hominin genomes 
 
 Run as follows:
 
