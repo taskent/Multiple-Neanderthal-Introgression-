@@ -11,18 +11,16 @@ S* is performed over 50 kb windows with a step size of 20 kb across all autosoma
 Run S* as follows: 
 
 #Western European 
-python Sstar_OOP_multipleRuns_we.py inputfile inputfile2 outputfile1 outputfile2
+python Sstar_we.py inputfile1 inputfile2 outputfile1 outputfile2 run
 
 #East Asia
-python Sstar_OOP_multipleRuns_ea.py inputfile inputfile2 outputfile1 outputfile2
+python Sstar_ea.py inputfile1 inputfile2 outputfile1 outputfile2 run
 
 inputfile1: A genotype file for present-day European or East Asian and Yoruba genomes (from sub-Saharan Africa) included in the 1000 Genomes Project, Phase I data set. The derived allele is ascertained against the chimpanzee genome (ie, chimpanzee allele is the ancestral allele)
-
-inputfile2: It shows the start and end positions of 50 kb windows over which S* operates
-
+inputfile2: A .txt file the start and end positions of 50 kb windows over which S* operates
 outputfile1: A .bed formatted file (eg, chr start_position end_position genotype_ind1 genotype_ind2 ...) showing the start and end positions of the haplotypes with the highest S*-score for each window. All SNPs that S* used to infer the putatively introgressed haplotype for each window are included in this file. 
-
-outputfile2: It shows the total number of segregating sites for all of the 20 Eurasian test genomes and 13 African outgroup genomes across each 50 kb window.
+outputfile2: A .txt file the total number of segregating sites for all of the 20 Eurasian test genomes and 13 African outgroup genomes across each 50 kb window.
+run: 1 to 10
 
 To cover all 200 individuals, this step was performed for 10 runs each time with a different set of 20 European/East Asian and 13 Yoruba genomes.  
 
