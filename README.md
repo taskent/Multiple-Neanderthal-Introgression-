@@ -1,6 +1,6 @@
 # Multiple-Neanderthal-Introgression-
 
-In this project, I investigated whether Neanderthal-introgressed haplotypes in the genomes of present-day Europeans and East Asians were inherited from two different Neanderthal lineages; that is, the late Neanderthals represented by the Vindija Neanderthal genome (Prufer et al 2017) and an early Neanderthal lineage represented by the Altai Neanderthal genome (Prufer et al. 2014). 
+In this project, I investigated whether Neanderthal-introgressed haplotypes in the genomes of present-day Europeans and East Asians were inherited from two different Neanderthal lineages; that is, the late Neanderthals represented by the Vindija Neanderthal genome (Prufer et al. 2017) and an early Neanderthal lineage represented by the Altai Neanderthal genome (Prufer et al. 2014). 
 
 
 ## 1) S*-statistics
