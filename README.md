@@ -14,13 +14,9 @@ S* is performed over 50 kb windows with a step size of 20 kb across all autosoma
 
 Run S* as follows: 
 
-#Western Europe
+python Sstar_we.py inputfile1 inputfile2 outputfile1 outputfile2 run #Western Europe
 
-python Sstar_we.py inputfile1 inputfile2 outputfile1 outputfile2 run
-
-#East Asia
-
-python Sstar_ea.py inputfile1 inputfile2 outputfile1 outputfile2 run
+python Sstar_ea.py inputfile1 inputfile2 outputfile1 outputfile2 run #East Asia
 
 inputfile1: A genotype file for present-day European or East Asian and Yoruba genomes (from sub-Saharan Africa) included in the 1000 Genomes Project, Phase I data set. The derived allele is ascertained against the chimpanzee genome (ie, chimpanzee allele is the ancestral allele)
 
@@ -104,13 +100,9 @@ population: ea (East Asia) or we (western Europe)
 
 Run as follows:
 
-#East Asia
+python compute_pi_new_mut_freqs_on_Sstar_haplotypes_EA.py inputfile1 inputfile2 outputfile1 outputfile2 #East Asia
 
-python compute_pi_new_mut_freqs_on_Sstar_haplotypes_EA.py inputfile1 inputfile2 outputfile1 outputfile2
-
-#Western Europe
-
-python compute_pi_new_mut_freqs_on_Sstar_haplotypes_WE.py inputfile1 inputfile2 outputfile1 outputfile2
+python compute_pi_new_mut_freqs_on_Sstar_haplotypes_WE.py inputfile1 inputfile2 outputfile1 outputfile2 #Western Europe
 
 inputfile1: A bed file for S*-significant phased haplotypes
 
