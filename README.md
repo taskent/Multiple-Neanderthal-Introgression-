@@ -54,11 +54,11 @@ population: western Europe or East Asia
 run: 1 to 10.
 
 
-## 3) Concetanate S*-significant haplotypes for runs 1 to 10
+## 3) Concatenate S*-significant haplotypes for runs 1 to 10
 
 Run as follows:
 
-concat_Sstar_outs_runs1_10_sort.sh
+concatenate_sort_Sstar_outputs_run1to10.sh
 
 
 ## 4) Merge overlapping haplotypes
