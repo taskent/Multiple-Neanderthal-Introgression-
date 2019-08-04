@@ -1,4 +1,5 @@
 ##Sstats -Sliding Windows of size 50 kb at each 20 kb- EASN-YRI -second half - Reference Chimp
+##Author: Recep Ozgur Taskent
 
 import itertools
 from itertools import islice
