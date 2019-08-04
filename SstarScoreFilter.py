@@ -1,3 +1,5 @@
+##Author: Recep Ozgur Taskent
+
 ## Sscore fine threshold filtering with number of segregating sites and recombination rate
 
 import sys
