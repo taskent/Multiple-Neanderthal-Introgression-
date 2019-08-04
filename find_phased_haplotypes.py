@@ -1,7 +1,8 @@
+##Author: Recep Ozgur Taskent
+
 import sys
 import os
 import string
-#import sqlite3
 
 inputfile1 = sys.argv[1]
 inputfile2 = sys.argv[2]
