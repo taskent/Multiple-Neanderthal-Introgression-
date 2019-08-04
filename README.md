@@ -100,19 +100,19 @@ outputfile: A .bed for S*-significant phased haplotypes, including the SNP posit
 population: ea (East Asia) or we (western Europe)
 
 
-## 6) Compute average pairwise nucleotide difference (pi) between the S*-significant haplotypes and the two high quality Neanderthal genomes (Altai and Vindija Neanderthal genomes) and count the number of new mutations occurred on S*-significant haplotypes in the modern human lineage (that is, after they entered human genomes) as well as the derived alleles shared between modern human populations and the ancient hominin genomes 
+## 6) Compute average pairwise nucleotide differences (pi) between the S*-significant haplotypes and the two high quality Neanderthal genomes (Altai and Vindija Neanderthal genomes) and count the number of new mutations occurred on S*-significant haplotypes in the modern human lineage (that is, after they entered human genomes) as well as the derived alleles shared between modern human populations and the ancient hominin genomes 
 
 Run as follows:
 
 #East Asia
 
-python compute_pi_new_mut_freqs_on_Sstar_haplotypes_EA.py inputfile inputfile2 outputfile outputfile2
+python compute_pi_new_mut_freqs_on_Sstar_haplotypes_EA.py inputfile1 inputfile2 outputfile1 outputfile2
 
 #Western Europe
 
-python compute_pi_new_mut_freqs_on_Sstar_haplotypes_WE.py inputfile inputfile2 outputfile outputfile2
+python compute_pi_new_mut_freqs_on_Sstar_haplotypes_WE.py inputfile1 inputfile2 outputfile1 outputfile2
 
-inputfile: A bed file for S*-significant phased haplotypes
+inputfile1: A bed file for S*-significant phased haplotypes
 
 inputfile2: A bed file for genotype data for European/East Asian, African as well as ancient hominin genomes (Altai Neanderthal, Vindija Neanderthal, Chagyrskaya Neanderthal and Denisovan genomes)
 
