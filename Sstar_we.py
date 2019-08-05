@@ -257,14 +257,13 @@ def main():
 				POP = [ 'NW_EUR' ]
 				RUN = [ RUNX ]
 				NO_SNPS = [ str( len(haplo_list) ) ]
-				print >>outf, '\t'.join(WIND + IND + MAXIMUMSCORE + HAPLO_LIST + LENGTH)
 				print >>outf2, '\t'.join(CHR + START + END + POP + MAXIMUMSCORE + IND2 + LENGTH + RUN +  HAPLO_LIST + NO_SNPS + WIND)
 				#outf.write("%s\t%s\t%f\t%s\t%d\n" % (j, m, maximumScore, haplo_list, length)) #write the window number, individual for which the S* was calculated, S* of the haplotype to the output file,  the haplotype, and the length of the haplotype to the outputfile
 			haplo_list = []
 
 		WIND = [ str(j) ]
 		COUNT_TOTALSNPS = [ str(count_totalsnp_sstats) ]
-		print >>outf3, '\t'.join(WIND + COUNT_TOTALSNPS)
+		print >>outf2, '\t'.join(WIND + COUNT_TOTALSNPS)
 		#outf2.write("%s\t%d\n" % (j, count_totalsnp_sstats))  #write the window number and the total number of segregating sites used for S* calculations to the outputfile2
 		snp_list_wind_sstats = []
 		count_totalsnp_sstats = 0
