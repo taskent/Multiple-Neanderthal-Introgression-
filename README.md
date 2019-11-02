@@ -1,12 +1,12 @@
 # Multiple Introgression from Neanderthals into Humans
 
-In this project, I investigated whether Neanderthal-introgressed haplotypes in the genomes of present-day Europeans and East Asians were inherited from two different Neanderthal lineages; that is, the late Neanderthals represented by the Vindija Neanderthal genome (Prufer et al. 2017) and an early Neanderthal lineage represented by the Altai Neanderthal genome (Prufer et al. 2014). 
+In this project, we investigated whether Neanderthal-introgressed haplotypes in the genomes of present-day Europeans and East Asians were inherited from two different Neanderthal lineages; that is, the late Neanderthals represented by the Vindija Neanderthal genome (Prufer et al. 2017) and an early Neanderthal lineage represented by the Altai Neanderthal genome (Prufer et al. 2014). 
 
 
 ## 1) S*-statistics
-To find putatively Neanderthal-introgressed haplotypes in present-day human genomes, S*-statistics is computed for 200 present-day genomes from each of Europe and East Asia.
+To find putatively Neanderthal-introgressed haplotypes in present-day human genomes, S* is computed for 200 present-day genomes from each of Europe and East Asia.
 
-Populations of 200 individuals with western European ancestry: Great Britain (GBR), Utah residents with Central European ancestry (CEU), Finland (FIN).
+Populations of 200 individuals with western European ancestry: Great Britain (GBR), Utah residents with Central European ancestry (CEU), Finnish (FIN).
 
 Populations of 200 individuals with East Asian ancestry: Han Chinese from Bejing (CHB), Han Chinese from South China (CHS), Japanese (JPN).  
 
