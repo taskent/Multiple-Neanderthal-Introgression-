@@ -1,3 +1,5 @@
+##Authors: Ionnis Patramanis and Recep Ozgur Taskent
+
 import msprime
 import numpy as np
 import math
@@ -38,7 +40,7 @@ T_split_NEAD1_NEAD2= 130000/generation_time
 T_split_AFRICA_OUTOFAFRICA= 51000/generation_time
 T_split_EU_ASIA= 23000/generation_time
 
-T_introgration1=50000/generation_time
+T_introgression1=50000/generation_time
 T_archaic_sampling=50000/generation_time
 T_archaic_sampling_neand2=120000/generation_time
 T_introgression_btw_neands =121000/generation_time
@@ -134,17 +136,17 @@ msprime.MigrationRateChange(time=T_split_EU_ASIA,rate=0.0001498975, matrix_index
 ########################################################################################
 
 #Introgression
-msprime.MigrationRateChange(time=T_introgration1,rate=0, matrix_index=(1, 4)),
-msprime.MigrationRateChange(time=T_introgration1,rate=0, matrix_index=(4, 1)),
+msprime.MigrationRateChange(time=T_introgression1,rate=0, matrix_index=(1, 4)),
+msprime.MigrationRateChange(time=T_introgression1,rate=0, matrix_index=(4, 1)),
 
 
-msprime.MigrationRateChange(time=T_introgration1,rate=0, matrix_index=(1, 4)),
-msprime.MigrationRateChange(time=T_introgration1,rate=0.03, matrix_index=(4, 1)),
+msprime.MigrationRateChange(time=T_introgression1,rate=0, matrix_index=(1, 4)),
+msprime.MigrationRateChange(time=T_introgression1,rate=0.03, matrix_index=(4, 1)),
 
 #End of Introgression
 
-msprime.MigrationRateChange(time=T_introgration1+1,rate=0, matrix_index=(1, 4)),
-msprime.MigrationRateChange(time=T_introgration1+1,rate=0, matrix_index=(4, 1)),
+msprime.MigrationRateChange(time=T_introgression1+1,rate=0, matrix_index=(1, 4)),
+msprime.MigrationRateChange(time=T_introgression1+1,rate=0, matrix_index=(4, 1)),
 
 
 
@@ -241,7 +243,7 @@ for j in dd:
     who=[]
     when=[]
     positions=[]
-    person_introgretions={}
+    person_introgressions={}
     person_chunks={}
     modernsamples=[i for i in range(0,j.num_samples)]
     #random_seed=random.randint(0,100000)
@@ -256,7 +258,7 @@ for j in dd:
                 leftchunks.append(float(i.left))   #original introgressed chunk
                 rightchunks.append(float(i.right)) #original introgressed chunk
                 who.append(int(i.node))          #original introgressed individual
-                when.append(str(i.time))         # time of introgretion
+                when.append(str(i.time))         # time of introgression
             if int(i.node) not in introgressed: #all original introgressed individuals
                 introgressed.append(int(i.node))
                 #break
@@ -309,9 +311,9 @@ for j in dd:
             			INTS+=1
             			WHO.append(int(ind))
             			try:
-            				person_introgretions[ind]+=1
+            				person_introgressions[ind]+=1
             			except KeyError:
-            				person_introgretions[ind]=1
+            				person_introgressions[ind]=1
             			try:
             				person_chunks[ind].append(tree.interval)
             			except KeyError:
@@ -360,9 +362,9 @@ for j in dd:
     print('number of trees (recombinations) : ',j.num_trees)
     out.write('number of trees (recombinations) : {}\n'.format(j.num_trees))
    
-    for k in person_introgretions:
-        print('The individual {} has {} introgressed trees in him/her'.format(k,person_introgretions[k]/j.num_trees))
-        out.write('The individual {} has {} introgressed trees in him/her \n'.format(k,person_introgretions[k]/j.num_trees))
+    for k in person_introgressions:
+        print('The individual {} has {} introgressed trees in him/her'.format(k,person_introgressions[k]/j.num_trees))
+        out.write('The individual {} has {} introgressed trees in him/her \n'.format(k,person_introgressions[k]/j.num_trees))
     
     
     numberoftrees=j.num_trees
