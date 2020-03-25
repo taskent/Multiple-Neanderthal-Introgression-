@@ -108,7 +108,7 @@ inputfile1: A bed file for S*-significant phased haplotypes
 
 inputfile2: A bed file for genotype data for European/East Asian, African as well as ancient hominin genomes (Altai Neanderthal, Vindija Neanderthal, Chagyrskaya Neanderthal and Denisovan genomes)
 
-outputfile1: A bed file for average pairwise nucleotide differences (pi)
+outputfile1: A bed file for average pairwise nucleotide differences (π)
 
 outputfile2: A bed file for number of new mutations and allele sharing between human populations and the ancient hominin genomes
 
