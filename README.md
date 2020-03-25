@@ -96,7 +96,7 @@ outputfile: A .bed for S*-significant phased haplotypes, including the SNP posit
 population: ea (East Asia) or we (western Europe)
 
 
-## 6) Compute average pairwise nucleotide differences (pi) between the S*-significant haplotypes and the two high quality Neanderthal genomes (Altai and Vindija Neanderthal genomes)  
+## 6) Compute average pairwise nucleotide differences (π) between the S*-significant haplotypes and the two high quality Neanderthal genomes (Altai and Vindija Neanderthal genomes)  
 
 Run as follows:
 
